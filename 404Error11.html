@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Fascinate);
+
+*{ box-sizing: border-box;}
+
+body, html {
+  width: 100%; 
+  min-height:100%;
+  font-family: 'Fascinate', cursive;
+  background: #6A9C92; 
+  font-size:16px;
+  display:flex;
+  justify-content:center;
+  flex-direction:row;
+  overflow-y:auto;
+  overflow-x:hidden;
+  padding-bottom:4rem;
+   & span{
+    margin:-2rem 0;
+    color:#F74545;
+    align-self:center;
+    font-size:34rem;
+    letter-spacing:-1rem;
+    transition:font-size .3s ease;
+    text-shadow:
+      0px 0px 0  #FFAC78,
+      -1px 1px 0 #FFAC78,
+      -2px 2px 0 #FFAC78,
+      -3px 3px 0 #FFAC78,
+      -4px 4px 0 #FFAC78,
+      -5px 5px 0 #FFAC78,
+      -6px 6px 0 #FFAC78,
+      -7px 7px 0 #FFE2A8,
+      -8px 8px 0 #FFE2A8,
+      -9px 9px 0 #FFE2A8,
+      -10px 10px 0 #FFE2A8,
+      -11px 11px 0 #FFE2A8,
+      -12px 12px 0 #FFE2A8,
+      -13px 13px 0 #FFE2A8,
+      -14px 14px 0 #FFE2A8,
+      -15px 15px 0 #FFE2A8,
+      -16px 16px 0 #FFE2A8, 
+      -17px 17px 0 hsla(0,0%,0%,.19),
+      0 6px 1px hsla(0,0%,0%,.1),
+      0 0 5px hsla(0,0%,0%,.2),
+      0 1px 3px hsla(0,0%,0%,.25),
+      0 3px 5px hsla(0,0%,0%,.28),
+      0 5px 10px hsla(0,0%,0%,.35),
+      0 10px 15px hsla(0,0%,0%,.4),
+      0 20px 20px hsla(0,0%,0%,.45);
+    &.one{
+      transform: rotate(-26deg);
+    }
+    &.two{
+      color:#423845;
+      font-size:36rem;
+     }
+     &.mid{
+       color:#423845;
+       font-size:6rem;
+       margin-left:-7rem;
+       margin-top:16rem;
+       z-index:3;
+       letter-spacing:-6px;
+     }
+    &.three{
+      transform:rotate(26deg);
+      margin-left:-5rem;
+      margin-top:-8rem;
+    }
+  }
+}
+@media (min-width:40.6875em) and (max-width:51.875em){
+  body{
+    & span{
+      font-size:28rem;
+      &.two, &.three{
+        font-size:30rem;
+      }
+    }
+  }
+}
+@media (min-width:30.0625em) and (max-width:40.625em){
+  body{
+    span{
+      font-size:22rem;
+      &.two, &.three{
+        font-size:24rem;
+      }
+    }
+  }
+}
+@media (max-width:30.0em){
+  body{
+    span{
+      align-self:center;
+      font-size:18rem;
+      &.two{
+        font-size:20rem;
+      }
+      &.mid{
+        margin-top:11rem;
+        margin-left:-5rem
+      }
+      &.three{
+        margin-left:-7rem;
+      }
+    }
+  }
+}
+
+
+ 
+
+    </style>
+</head>
+<body>
+    <span class='one'>4</span>
+    <span class='two'>0</span>
+    <span class='mid'>ops!</span>
+    <span class='three'>4</span>
+</body>
+</html>
